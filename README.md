@@ -1,74 +1,175 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+  # TaskBoard – React Task Management Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TaskBoard is a single-page React application that allows users to register, log in, and manage their personal tasks efficiently.  
+It demonstrates authentication, protected routes, CRUD operations, state management, persistence, testing, and a modern responsive UI.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+### 🔐 Authentication
+- User Registration & Login
+- Client-side password hashing using **bcryptjs**
+- Session handling using mock authentication token
+- Protected routes (unauthenticated users redirected to login)
+- Logout functionality with session cleanup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📝 Task Management
+- Create, View, Edit, and Delete tasks
+- Tasks are **user-specific**
+- Fields included:
+  - Title
+  - Description
+  - Priority (Low / Medium / High)
+  - Status (To Do / In Progress / Done)
+  - Due Date
+- Validation for required fields
+- Validation to prevent past due dates
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🔍 Search, Filter & Sort
+- Search tasks by title or description
+- Filter tasks by:
+  - Status
+  - Priority
+- Sort tasks by:
+  - Due date
+  - Priority
 
-### `npm test`
+### 💾 Data Persistence
+- Data stored using **localStorage**
+- Users, sessions, and tasks persist across page reloads
+- No backend required (frontend-only assignment)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🎨 UI & UX
+- Modern gradient-based user interface
+- Fully responsive layout
+- Active page highlighting in navbar
+- User avatar with initials
+- Dropdown menu for user actions
+- Smooth hover effects and animations
+- Clean spacing, typography, and color hierarchy
 
-### `npm run build`
+### 🧪 Testing
+- Unit tests written using:
+  - **Jest**
+  - **React Testing Library**
+- Authentication tests
+- Task creation and deletion tests
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠 Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React** (Functional Components & Hooks)
+- **React Router DOM**
+- **Context API + Reducer**
+- **CSS (Custom Styling)**
+- **bcryptjs** – password hashing
+- **uuid** – token generation
+- **Jest & React Testing Library** – testing
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📂 Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# TaskBoard – React Task Management Application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+TaskBoard is a single-page React application that allows users to register, log in, and manage their personal tasks efficiently.  
+It demonstrates authentication, protected routes, CRUD operations, state management, persistence, testing, and a modern responsive UI.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🚀 Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 🔐 Authentication
+- User Registration & Login
+- Client-side password hashing using **bcryptjs**
+- Session handling using mock authentication token
+- Protected routes (unauthenticated users redirected to login)
+- Logout functionality with session cleanup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 📝 Task Management
+- Create, View, Edit, and Delete tasks
+- Tasks are **user-specific**
+- Fields included:
+  - Title
+  - Description
+  - Priority (Low / Medium / High)
+  - Status (To Do / In Progress / Done)
+  - Due Date
+- Validation for required fields
+- Validation to prevent past due dates
 
-### Code Splitting
+### 🔍 Search, Filter & Sort
+- Search tasks by title or description
+- Filter tasks by:
+  - Status
+  - Priority
+- Sort tasks by:
+  - Due date
+  - Priority
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 💾 Data Persistence
+- Data stored using **localStorage**
+- Users, sessions, and tasks persist across page reloads
+- No backend required (frontend-only assignment)
 
-### Analyzing the Bundle Size
+### 🎨 UI & UX
+- Modern gradient-based user interface
+- Fully responsive layout
+- Active page highlighting in navbar
+- User avatar with initials
+- Dropdown menu for user actions
+- Smooth hover effects and animations
+- Clean spacing, typography, and color hierarchy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 🧪 Testing
+- Unit tests written using:
+  - **Jest**
+  - **React Testing Library**
+- Authentication tests
+- Task creation and deletion tests
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🛠 Tech Stack
 
-### Advanced Configuration
+- **React** (Functional Components & Hooks)
+- **React Router DOM**
+- **Context API + Reducer**
+- **CSS (Custom Styling)**
+- **bcryptjs** – password hashing
+- **uuid** – token generation
+- **Jest & React Testing Library** – testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📂 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+src/                                                                                                     
+├── components/                                                                                                                                                  
+│ └── ProtectedRoute.jsx                                                                                       
+├── context/                                                                                                                       
+│ ├── AuthContext.jsx                                                                                                                                     
+│ └── authReducer.js                                                                                                                                                               
+├── hooks/                                                                                                                                                              
+│ └── useAuth.js                                                                                                                                                                                 
+├── pages/                                                                                               
+│ ├── Login.jsx                                                                                                                        
+│ ├── Register.jsx                                                                                                                                 
+│ ├── TaskList.jsx                                                                                                                                               
+│ ├── AddTask.jsx                                                                                                                                     
+│ └── EditTask.jsx                                                                                                                                    
+├── tests/                                                                                                                                         
+│ ├── auth.test.jsx                                                                                                                            
+│ └── tasks.test.jsx                                                                                                           
+├── utils/                                                                                                
+│ └── validators.js                                                                                                               
+├── App.js                                                                                                                                    
+├── App.css                                                                                                                                        
+├── index.js                                                                                                                                                         
+├── index.css                                                                                                                                                       
+└── README.md                                                           
 
-### `npm run build` fails to minify
+⭐ If you find this project useful, feel free to give it a star on GitHub!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# taskboard-react
->>>>>>> 6aa8e00c5ab887188bf08ea17cd3261d52e39187
